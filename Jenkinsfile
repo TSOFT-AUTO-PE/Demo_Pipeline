@@ -5,6 +5,7 @@ pipeline {
    stages {
        stage('Building') {
          steps {
+            agent { label 'Abraham_PC' }
             echo 'Contruyendo Interface'
             }
         }
