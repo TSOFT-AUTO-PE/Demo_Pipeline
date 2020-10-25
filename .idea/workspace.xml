@@ -192,8 +192,8 @@
     </configuration>
     <list>
       <item itemvalue="Cucumber Java.Scenario: Generación de TOKEN URL" />
-      <item itemvalue="Cucumber Java.Scenario: Recargas en Mi Movistar Completo MOVIL (Generando automáticamente Token URL)" />
       <item itemvalue="Cucumber Java.Scenario: Recargas en Mi Movistar Completo (Generando automáticamente Token URL)" />
+      <item itemvalue="Cucumber Java.Scenario: Recargas en Mi Movistar Completo MOVIL (Generando automáticamente Token URL)" />
       <item itemvalue="Cucumber Java.Scenario: Recargas en Mi Movistar WEB PUBLICA (Generando automáticamente Token 2 URL)" />
       <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="TestNG.RunTest" />
