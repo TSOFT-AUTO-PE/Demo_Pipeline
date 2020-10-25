@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="360574ac-4aaa-4518-a335-6fb560437bee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/driver/86/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-reporte.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-reporte.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tsoft/bot/frontend/helpers/Hook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tsoft/bot/frontend/helpers/Hook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tsoft/bot/frontend/pageobject/webMiMovistar/PageRecargaFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tsoft/bot/frontend/pageobject/webMiMovistar/PageRecargaFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tsoft/bot/frontend/runner/RunTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tsoft/bot/frontend/runner/RunTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/excel/MiMovistar_Recargas.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/excel/MiMovistar_Recargas.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tsoft/bot/frontend/helpers/Hook.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tsoft/bot/frontend/helpers/Hook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tsoft/bot/frontend/pageobject/webMiMovistar/PageRecargaFinal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tsoft/bot/frontend/pageobject/webMiMovistar/PageRecargaFinal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tsoft/bot/frontend/runner/RunTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tsoft/bot/frontend/runner/RunTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/excel/MiMovistar_Recargas.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/excel/MiMovistar_Recargas.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/formatter.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber/formatter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/jquery-1.8.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber/jquery-1.8.2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/resultado/Evidencia-07-10-2020_03-59-01.docx" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1V57SUtJ2jtO1BzZFtzF13tAaWd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last.edited.regexp" value="Sample Text" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/driver/86" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.29770115" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tsoft.bot.frontend.utility" />
+      <recent name="com.tsoft.bot.frontend.helpers" />
+      <recent name="com.tsoft.bot.frontend.listener" />
+      <recent name="com.tsoft.bot.frontend.exceptions" />
+      <recent name="com.tsoft.bot.frontend" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\Jose\Recargas_Moviles\web-automation-framework\src\main\resources\driver\86" />
+      <recent name="E:\FiorellaVargas\AGILE_MIMOVISTAR_PASARELLA-master\AGILE_MIMOVISTAR_PASARELLA-master\web-automation-framework\src\main\resources\features" />
+      <recent name="E:\FiorellaVargas\AGILE_MIMOVISTAR_PASARELLA-master\AGILE_MIMOVISTAR_PASARELLA-master\web-automation-framework\src\main\resources\excel" />
+      <recent name="E:\FiorellaVargas\AGILE_MIMOVISTAR_PASARELLA-master\AGILE_MIMOVISTAR_PASARELLA-master\web-automation-framework\src\main\java\com\tsoft\bot\frontend\steps\APP_TSOFT" />
+      <recent name="E:\FiorellaVargas\AGILE_MIMOVISTAR_PASARELLA-master\AGILE_MIMOVISTAR_PASARELLA-master\web-automation-framework\src\main\java\com\tsoft\bot\frontend\pageobject\APP_TSOFT" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.RunTest">
+    <configuration name="Scenario: Generación de TOKEN URL" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/MiMovistar_FlujoRecargas.feature" />
+      <option name="GLUE" value="com.tsoft.bot.frontend.helpers com.tsoft.bot.frontend.steps.webMiMovistar" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="web-automation-framework" />
+      <option name="NAME_FILTER" value="^Generación de TOKEN URL$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Generación de TOKEN URL$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Generación de TOKEN URL" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Recargas en Mi Movistar Completo MOVIL (Generando automáticamente Token URL)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/MiMovistar_FlujoRecargas.feature" />
+      <option name="GLUE" value="com.tsoft.bot.frontend.helpers com.tsoft.bot.frontend.steps.webMiMovistar" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="web-automation-framework" />
+      <option name="NAME_FILTER" value="^Recargas en Mi Movistar Completo MOVIL \(Generando automáticamente Token URL\)$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Recargas en Mi Movistar Completo MOVIL \(Generando automáticamente Token URL\)$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Recargas en Mi Movistar Completo MOVIL (Generando automáticamente Token URL)" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Recargas en Mi Movistar Completo (Generando automáticamente Token URL)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/MiMovistar_FlujoRecargas.feature" />
+      <option name="GLUE" value="com.tsoft.bot.frontend.helpers com.tsoft.bot.frontend.steps.mimovistar" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="web-automation-framework" />
+      <option name="NAME_FILTER" value="^Recargas en Mi Movistar Completo \(Generando automáticamente Token URL\)$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Recargas en Mi Movistar Completo \(Generando automáticamente Token URL\)$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Recargas en Mi Movistar Completo (Generando automáticamente Token URL)" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Recargas en Mi Movistar WEB PUBLICA (Generando automáticamente Token 2 URL)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/MiMovistar_FlujoRecargas.feature" />
+      <option name="GLUE" value="com.tsoft.bot.frontend.helpers com.tsoft.bot.frontend.steps.webMiMovistar" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="web-automation-framework" />
+      <option name="NAME_FILTER" value="^Recargas en Mi Movistar WEB PUBLICA \(Generando automáticamente Token 2 URL\)$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Recargas en Mi Movistar WEB PUBLICA \(Generando automáticamente Token 2 URL\)$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Recargas en Mi Movistar WEB PUBLICA (Generando automáticamente Token 2 URL)" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="web-automation-framework" />
+      <useClassPathOnly />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunTest" type="TestNG">
+      <module name="web-automation-framework" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.tsoft.bot.frontend.runner" />
+      <option name="MAIN_CLASS_NAME" value="com.tsoft.bot.frontend.runner.RunTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Cucumber Java.Scenario: Generación de TOKEN URL" />
+      <item itemvalue="Cucumber Java.Scenario: Recargas en Mi Movistar Completo (Generando automáticamente Token URL)" />
+      <item itemvalue="Cucumber Java.Scenario: Recargas en Mi Movistar Completo MOVIL (Generando automáticamente Token URL)" />
+      <item itemvalue="Cucumber Java.Scenario: Recargas en Mi Movistar WEB PUBLICA (Generando automáticamente Token 2 URL)" />
+      <item itemvalue="JUnit.Unnamed" />
+      <item itemvalue="TestNG.RunTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Scenario: Recargas en Mi Movistar WEB PUBLICA (Generando automáticamente Token 2 URL)" />
+        <item itemvalue="Cucumber Java.Scenario: Recargas en Mi Movistar Completo MOVIL (Generando automáticamente Token URL)" />
+        <item itemvalue="Cucumber Java.Scenario: Generación de TOKEN URL" />
+        <item itemvalue="Cucumber Java.Scenario: Recargas en Mi Movistar Completo (Generando automáticamente Token URL)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="360574ac-4aaa-4518-a335-6fb560437bee" name="Default Changelist" comment="" />
+      <created>1576531102772</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576531102772</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.feature" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="108" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603213422035">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="108" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1603213422035" />
+    <state x="463" y="69" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1603212384142">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="69" key="#com.intellij.ide.macro.MacrosDialog/0.0.1366.728@0.0.1366.728" timestamp="1603212384142" />
+    <state x="450" y="235" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1603213357060">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="450" y="235" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1603213357060" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597164470499">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597164470499" />
+    <state x="526" y="193" key="FileChooserDialogImpl" timestamp="1603212281577">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="526" y="193" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603212281577" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1601669341896" />
+    <state width="1323" height="238" key="GridCell.Tab.0.bottom" timestamp="1603214766711">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603214766711" />
+    <state width="1860" height="220" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601672267741" />
+    <state width="1323" height="238" key="GridCell.Tab.0.center" timestamp="1603214766711">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603214766711" />
+    <state width="1860" height="220" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601672267741" />
+    <state width="1323" height="238" key="GridCell.Tab.0.left" timestamp="1603214766711">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603214766711" />
+    <state width="1860" height="220" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601672267741" />
+    <state width="1323" height="238" key="GridCell.Tab.0.right" timestamp="1603214766711">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603214766711" />
+    <state width="1860" height="220" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601672267741" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1596850748434">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596850748434" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1596850748434">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596850748434" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1596850748433">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596850748433" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1596850748434">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596850748434" />
+  </component>
+</project>
