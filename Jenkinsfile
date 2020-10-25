@@ -41,7 +41,7 @@ pipeline {
 		    archiveArtifacts 'frontend-reporte.html'
             }
       }
-      stage('Cleaning') {
+      stage('Cleaning WS') {
             steps {
             dir('target') {
                 deleteDir()
