@@ -1,11 +1,12 @@
 pipeline {
 
-    agent none
+    agent {
+        node { label 'Abraham_PC' }
+    }
 
    stages {
        stage('Building') {
          steps {
-            agent { label 'Abraham_PC' }
             echo 'Contruyendo Interface'
             }
         }

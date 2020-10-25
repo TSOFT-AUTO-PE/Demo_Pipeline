@@ -22,7 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="360574ac-4aaa-4518-a335-6fb560437bee" name="Default Changelist" comment="Se agrega Jenkins" />
+    <list default="true" id="360574ac-4aaa-4518-a335-6fb560437bee" name="Default Changelist" comment="Se modifica el agente para que ejecute en Abraham_PC">
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -233,7 +235,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603657752828</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Se modifica el agente para que ejecute en Abraham_PC">
+      <created>1603661650416</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603661650416</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Se modifica el agente para que ejecute en Abraham_PC">
+      <created>1603661817292</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603661817292</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -254,7 +270,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se agrega Jenkinsfile" />
     <MESSAGE value="Se agrega Jenkins" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se agrega Jenkins" />
+    <MESSAGE value="Se modifica el agente para que ejecute en Abraham_PC" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se modifica el agente para que ejecute en Abraham_PC" />
   </component>
   <component name="WindowStateProjectService">
     <state x="108" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603213422035">
@@ -314,9 +331,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596850748434" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603657771510">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603661819836">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603657771510" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603661819836" />
   </component>
 </project>
