@@ -36,6 +36,11 @@ pipeline {
             archiveArtifacts 'target/resultado/*.docx'
             }
       }
+       stage('Archive Results IMG') {
+             steps {
+      		 archiveArtifacts 'target/resultado/img/*.png'
+                  }
+            }
       stage('Archive Results HTML') {
             steps {
 		    archiveArtifacts 'frontend-reporte.html'
