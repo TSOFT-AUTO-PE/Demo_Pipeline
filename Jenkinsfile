@@ -38,7 +38,7 @@ pipeline {
       }
        stage('Archive Results IMG') {
              steps {
-      		 archiveArtifacts 'target/resultado/img/*.png'
+      		 archiveArtifacts 'target/resultado/img/**/*.*'
                   }
             }
       stage('Archive Results HTML') {
@@ -51,9 +51,7 @@ pipeline {
             dir('target') {
                 deleteDir()
 }
-            dir('img') {
-                deleteDir()
-}
+
             }
       }
     }
