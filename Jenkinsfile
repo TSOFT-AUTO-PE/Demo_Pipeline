@@ -43,7 +43,7 @@ pipeline {
             }
       stage('Archive Results HTML') {
             steps {
-		    archiveArtifacts 'frontend-reporte.html'
+		    archiveArtifacts 'target/resultado/frontend-reporte.html'
             }
       }
       stage('Cleaning WS') {
