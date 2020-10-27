@@ -12,6 +12,8 @@ import org.apache.poi.xwpf.usermodel.XWPFRun;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.sikuli.script.Screen;
+import org.sikuli.script.ScreenImage;
 
 import java.io.*;
 import java.text.DateFormat;
@@ -21,16 +23,19 @@ import java.util.TimeZone;
 
 public class GenerateWord {
 
-    private static final String PATH_RELATIVE_WORD  = "/src/main/resources/template/Evidencia.docx";
-    private static final String TEMPLATE            = "/src/main/resources/template/Plantila.png";
-    private static final String WORD_NAME_STANDAR   = "Evidencia.docx";
-    private static final String FILE_PATH_STANDAR   = FileHelper.getProjectFolder() + "/target/resultado/";
-    public static XWPFDocument document ;
-    public static XWPFParagraph paragraph ;
+    private static final String PATH_RELATIVE_WORD = "/src/main/resources/template/Evidencia.docx";
+    private static final String TEMPLATE = "/src/main/resources/template/Plantila.png";
+    private static final String WORD_NAME_STANDAR = "Evidencia.docx";
+    private static final String FILE_PATH_STANDAR = FileHelper.getProjectFolder() + "/target/resultado/";
+
+    private String TEMP_WORD_FILE;
+    public static XWPFDocument document;
+    public static XWPFParagraph paragraph;
     public static XWPFRun run;
     public static FileOutputStream fileOutputStream;
 
-    public void startUpWord() {
+
+    public void startUpWord(String name) {
 
         try {
             File fileUnique = new File(FileHelper.getProjectFolder() + PATH_RELATIVE_WORD);
@@ -47,25 +52,29 @@ public class GenerateWord {
 
             FileUtils.forceMkdir(new File(carpeta));
 
-            fileOutputStream = new FileOutputStream(FileUtils.getFile(carpeta) + "/Evidencia-" + generarSecuencia() + ".docx");
+            TEMP_WORD_FILE = FileUtils.getFile(carpeta) + "/" + name + "-" + generarSecuencia() + ".docx";
+            fileOutputStream = new FileOutputStream(FileUtils.getFile(carpeta) + "/" + name + "-" + generarSecuencia() + ".docx");
 
             InputStream insertTemplate = new FileInputStream(FileHelper.getProjectFolder() + TEMPLATE);
 
-            run.addPicture(insertTemplate, Document.PICTURE_TYPE_PNG, "1", Units.toEMU(440), Units.toEMU(640));
+            run.addPicture(insertTemplate, Document.PICTURE_TYPE_PNG, "1", Units.toEMU(440), Units.toEMU(740));
 
             run.addBreak();
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
+        System.out.println("[LOG] Word generado");
     }
 
-    public void sendBreak(){run.addBreak();}
+    public void sendBreak() {
+        run.addBreak();
+    }
 
     public void copyExistentWord(File file) {
 
-        InputStream inputStream = null;
+        InputStream inputStream;
 
-        OutputStream outputStream = null;
+        OutputStream outputStream;
 
         try {
 
@@ -100,13 +109,13 @@ public class GenerateWord {
 
         try {
 
-            TakesScreenshot screenshot  = ((TakesScreenshot)driver);
+            TakesScreenshot screenshot = ((TakesScreenshot) driver);
 
-            File source                 = screenshot.getScreenshotAs(OutputType.FILE);
+            File source = screenshot.getScreenshotAs(OutputType.FILE);
 
-            InputStream inputStream  = new FileInputStream(source);
+            InputStream inputStream = new FileInputStream(source);
 
-            run.addPicture(inputStream, Document.PICTURE_TYPE_PNG, "1", Units.toEMU(462), Units.toEMU(289));
+            run.addPicture(inputStream, Document.PICTURE_TYPE_PNG, "1", Units.toEMU(465), Units.toEMU(200));
 
             run.addBreak();
 
@@ -118,39 +127,85 @@ public class GenerateWord {
 
     }
 
-    public void sendText(String texto)  {
-        run.setText("Fecha : " +generarFecha() + ", Hora : " + generarHora() + " | " + texto);
+
+    public void addImageToWord(Screen screen) {
+
+        try {
+
+            ScreenImage screenshot = (screen.capture());
+
+            File source = new File(screenshot.getFile());
+
+            InputStream inputStream = new FileInputStream(source);
+
+            run.addPicture(inputStream, Document.PICTURE_TYPE_PNG, "1", Units.toEMU(465), Units.toEMU(200));
+
+            run.addBreak();
+
+        } catch (Exception e) {
+
+            e.printStackTrace();
+
+        }
+
+    }
+
+    public void sendText(String texto) {
+        run.setText("Fecha : " + generarFecha() + ", Hora : " + generarHora() + " | " + texto);
         run.addTab();
         run.setFontFamily("Century Gothic");
         run.setFontSize(9);
     }
 
-    public void endToWord() throws IOException   {
+    public void sendBoldText(String texto) {
+        run.setBold(true);
+        run.setText("Fecha : " + generarFecha() + ", Hora : " + generarHora() + " | " + texto);
+        run.addTab();
+        run.setFontFamily("Century Gothic");
+        run.setFontSize(9);
+    }
 
+    public void endToWord(String status) throws IOException {
         try {
 
             document.write(fileOutputStream);
 
-            File file = new File(FileHelper.getProjectFolder() + "/Evidenciasssss.docx");
+            File fileWithNewName = new File(TEMP_WORD_FILE.split("\\.docx")[0] + "-" + status.toUpperCase() + ".docx");
 
-            if (file.exists()){ file.delete(); }
+            if (new File(TEMP_WORD_FILE).renameTo(fileWithNewName)) {
+
+                System.out.println("[LOG] WORD: Evidencia renombrada - Se añadió el estado final del escenario");
+            } else {
+
+                System.out.println("[LOG] WORD: Evidencia no pudo ser renombrada - No Se añadió el estado final del escenario");
+
+            }
+
+            File file = new File(FileHelper.getProjectFolder() + "/Evidencia.docx");
+
+            if (file.exists()) {
+                file.delete();
+            }
 
             fileOutputStream.close();
 
-        } catch (FileNotFoundException e) { e.printStackTrace(); }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        System.out.println("[LOG] Word cerrado");
     }
 
-    private final static String generarSecuencia() {
+    private static String generarSecuencia() {
 
-            DateFormat df = new SimpleDateFormat("dd-MM-yyyy_hh-mm-ss");
+        DateFormat df = new SimpleDateFormat("dd-MM-yyyy_hh-mm-ss");
 
-            df.setTimeZone(TimeZone.getTimeZone("America/Bogota"));
+        df.setTimeZone(TimeZone.getTimeZone("America/Bogota"));
 
-            return df.format(new Date());
+        return df.format(new Date());
 
     }
 
-    private final static String generarFecha() {
+    private static String generarFecha() {
 
         DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
 
@@ -160,11 +215,11 @@ public class GenerateWord {
 
     }
 
-    private final static String generarHora(){
+    private static String generarHora() {
         DateFormat df = new SimpleDateFormat("hh:mm:ss");
         df.setTimeZone(TimeZone.getTimeZone("America/Bogota"));
 
         return df.format(new Date());
     }
 
-    }
+}

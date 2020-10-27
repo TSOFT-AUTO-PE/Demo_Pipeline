@@ -6,9 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Demo_Pipeline" />
         <module name="web-automation-framework" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="web-automation-framework" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,6 +1,6 @@
 package com.tsoft.bot.frontend.steps.webMiMovistar;
 
-import com.tsoft.bot.frontend.pageobject.webMiMovistar.PageRecargasPago;
+import com.tsoft.bot.frontend.pages.webMiMovistar.PageRecargasPago;
 import cucumber.api.java.en.And;
 
 public class stepsRecargasPago extends PageRecargasPago{

@@ -1,8 +1,11 @@
+/*
+    @author: Abraham Hernandez - TSOFT
+*/
 package com.tsoft.bot.frontend.utility;
 
 public class Sleeper {
 
-    private static final double escala = 1.5; // cloud
+    private static final double escala = 1.8;
 
     public static void Sleep(int tiempo) {
         try {

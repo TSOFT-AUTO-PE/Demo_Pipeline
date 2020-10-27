@@ -1,6 +1,6 @@
 package com.tsoft.bot.frontend.steps.webMiMovistar;
 
-import com.tsoft.bot.frontend.pageobject.webMiMovistar.PageRecargasHome;
+import com.tsoft.bot.frontend.pages.webMiMovistar.PageRecargasHome;
 import com.tsoft.bot.frontend.utility.CallerJSON_MiMovistarRecarga;
 import com.tsoft.bot.frontend.utility.CallerJSON_MiMovistarRecargaV2;
 import cucumber.api.java.en.And;

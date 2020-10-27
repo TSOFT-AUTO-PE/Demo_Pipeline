@@ -1,6 +1,6 @@
 package com.tsoft.bot.frontend.steps.webMiMovistar;
 
-import com.tsoft.bot.frontend.pageobject.webMiMovistar.PageRecargasCorreo;
+import com.tsoft.bot.frontend.pages.webMiMovistar.PageRecargasCorreo;
 import cucumber.api.java.en.When;
 
 
