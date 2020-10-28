@@ -6,9 +6,14 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import java.io.FileInputStream;
 import java.io.IOException;
-import java.net.Socket;
+import java.io.InputStream;
 import java.util.HashMap;
 import java.util.List;
 
@@ -18,12 +23,14 @@ public class CallerJSON_MiMovistarRecarga {
     private static final String RECARGAS_WEB = "Recargas";
     private static final String COLUMNA_URL = "URL";
     private static final String COLUMNA_TELEFONO = "TELEFONO";
-
+    private static final String COLUMNA_SERVER = "SERVER";
 
     public static void API_API_TEST_recargas() {
         try {
-            String ip = "192.168.12.42"; // Sensitive
-            Socket socket = new Socket(ip, 6667);
+            InputStream ExcelFileToRead = new FileInputStream("C:\\Users\\Abraham Rivera\\Desktop\\DALE\\Demo_Pipeline\\src\\main\\resources\\excel\\MiMovistar_Recargas.xlsx");
+            XSSFWorkbook wb = new XSSFWorkbook(ExcelFileToRead);
+            String ip;
+            ip = String.valueOf(wb.getSheetAt(0).getRow(1).getCell(11));
             String result = blockIP(ip);
             System.out.println(result);
         } catch (IOException e) {
@@ -38,9 +45,12 @@ public class CallerJSON_MiMovistarRecarga {
     public static void main(String[] args) {
 
         try {
-            String ip = "192.168.12.42"; // Sensitive
-            Socket socket = new Socket(ip, 6667);
+            InputStream ExcelFileToRead = new FileInputStream("C:\\Users\\Abraham Rivera\\Desktop\\DALE\\Demo_Pipeline\\src\\main\\resources\\excel\\MiMovistar_Recargas.xlsx");
+            XSSFWorkbook wb = new XSSFWorkbook(ExcelFileToRead);
+            String ip;
+            ip = String.valueOf(wb.getSheetAt(0).getRow(1).getCell(11));
             String result = blockIP(ip);
+            System.out.println(ip);
             System.out.println(result);
         } catch (IOException e) {
             System.out.println (e.toString());
