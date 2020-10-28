@@ -8,6 +8,7 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
+import java.net.Socket;
 import java.util.HashMap;
 import java.util.List;
 
@@ -17,11 +18,13 @@ public class CallerJSON_MiMovistarRecarga {
     private static final String RECARGAS_WEB = "Recargas";
     private static final String COLUMNA_URL = "URL";
     private static final String COLUMNA_TELEFONO = "TELEFONO";
-    private static final String IPstr = "1.1.1.1";
+
 
     public static void API_API_TEST_recargas() {
         try {
-            String result = blockIP(IPstr);
+            String ip = "192.168.12.42"; // Sensitive
+            Socket socket = new Socket(ip, 6667);
+            String result = blockIP(ip);
             System.out.println(result);
         } catch (IOException e) {
             System.out.println (e.toString());
@@ -35,7 +38,9 @@ public class CallerJSON_MiMovistarRecarga {
     public static void main(String[] args) {
 
         try {
-            String result = blockIP(IPstr);
+            String ip = "192.168.12.42"; // Sensitive
+            Socket socket = new Socket(ip, 6667);
+            String result = blockIP(ip);
             System.out.println(result);
         } catch (IOException e) {
             System.out.println (e.toString());
