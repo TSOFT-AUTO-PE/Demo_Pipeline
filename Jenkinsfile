@@ -68,10 +68,7 @@ pipeline {
             dir('target') {
                 deleteDir()
                 }
-                 dir('.idea') {
-                                deleteDir()
-                                }
-                                 dir('src') {
+                                 dir('img') {
                                                 deleteDir()
                                                 }
 

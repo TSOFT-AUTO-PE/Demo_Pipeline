@@ -22,9 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cee7dd2-1ac3-4e12-9c09-212b020005a1" name="Default Changelist" comment="Se modifica el Jenkinsfile  Clean all project v.25">
+    <list default="true" id="5cee7dd2-1ac3-4e12-9c09-212b020005a1" name="Default Changelist" comment="Se modifica el Jenkinsfile  a Clean WS v.28">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +285,42 @@
       <option name="project" value="LOCAL" />
       <updated>1603912987642</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Se modifica el Jenkinsfile  Clean WS v.25">
+      <created>1603924410406</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1603924410406</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Se modifica el Jenkinsfile  a Clean WS v.25">
+      <created>1603924532961</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1603924532961</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Se modifica el Jenkinsfile  a Clean WS v.27">
+      <created>1603924758500</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1603924758500</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Se modifica el Jenkinsfile  a Clean WS v.27">
+      <created>1603926345029</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1603926345029</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Se modifica el Jenkinsfile  a Clean WS v.28">
+      <created>1603927891435</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1603927891435</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -322,7 +356,11 @@
     <MESSAGE value="Se modifica el Jenkinsfile - Cambio Clase Sleeper v.23" />
     <MESSAGE value="Se modifica el Jenkinsfile v.24" />
     <MESSAGE value="Se modifica el Jenkinsfile  Clean all project v.25" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se modifica el Jenkinsfile  Clean all project v.25" />
+    <MESSAGE value="Se modifica el Jenkinsfile  Clean WS v.25" />
+    <MESSAGE value="Se modifica el Jenkinsfile  a Clean WS v.25" />
+    <MESSAGE value="Se modifica el Jenkinsfile  a Clean WS v.27" />
+    <MESSAGE value="Se modifica el Jenkinsfile  a Clean WS v.28" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se modifica el Jenkinsfile  a Clean WS v.28" />
   </component>
   <component name="WindowStateProjectService">
     <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1603859094281">
@@ -353,10 +391,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603868047901" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603912991110">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603927893131">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603912991110" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603927893131" />
     <state x="660" y="277" key="refactoring.ChangeSignatureDialog" timestamp="1603856741886">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
