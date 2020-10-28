@@ -63,11 +63,19 @@ pipeline {
 		    archiveArtifacts 'target/resultado/frontend-reporte.html'
             }
       }
-    }
-     post {
-            always {
-                deleteDir() /* clean up our workspace */
-            }
-        }
+      stage('Cleaning WS') {
+            steps {
+            dir('target') {
+                deleteDir()
+                }
+                 dir('.idea') {
+                                deleteDir()
+                                }
+                                 dir('src') {
+                                                deleteDir()
+                                                }
 
+            }
+      }
+    }
 }
