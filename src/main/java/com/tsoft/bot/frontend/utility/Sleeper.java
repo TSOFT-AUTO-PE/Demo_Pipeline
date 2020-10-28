@@ -12,6 +12,7 @@ public class Sleeper {
             if (tiempo <= 0) return;
             Thread.sleep((long) (tiempo * escala));
         } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
             System.out.println("[ERROR] " + e.getMessage());
         }
     }
