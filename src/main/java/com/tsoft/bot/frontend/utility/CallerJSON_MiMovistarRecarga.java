@@ -17,13 +17,14 @@ public class CallerJSON_MiMovistarRecarga {
     private static final String RECARGAS_WEB = "Recargas";
     private static final String COLUMNA_URL = "URL";
     private static final String COLUMNA_TELEFONO = "TELEFONO";
+    private static final String IPstr = "1.1.1.1";
 
     public static void API_API_TEST_recargas() {
         try {
-            String result = blockIP("1.1.1.1");
+            String result = blockIP(IPstr);
             System.out.println(result);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println (e.toString());
         }
     }
 
@@ -34,17 +35,17 @@ public class CallerJSON_MiMovistarRecarga {
     public static void main(String[] args) {
 
         try {
-            String result = blockIP("1.1.1.1");
+            String result = blockIP(IPstr);
             System.out.println(result);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println (e.toString());
         }
 
     }
 
     private static String blockIP(String ip) throws IOException {
 
-        String result = "";
+        String result;
 
         HttpPost post = new HttpPost("https://api.us-east.apiconnect.ibmcloud.com/telefonica-del-peru-development/topen/webviews/v1/users/me/phone-numbers/920957951/webviews/account_topup_external_payment");
         post.addHeader("Content-Type", "application/json");
