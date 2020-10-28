@@ -21,16 +21,20 @@ public class CallerJSON_MiMovistarRecargaV2 {
     private static final String COLUMNA_URL = "URL";
     private static final String COLUMNA_TELEFONO = "TELEFONO";
 
-    public static void API_API_TEST_recargas() {
+    public static void API_API_TEST_recargas() throws IOException {
+        InputStream ExcelFileToRead = null;
         try {
-            InputStream ExcelFileToRead = new FileInputStream("C:\\Users\\Abraham Rivera\\Desktop\\DALE\\Demo_Pipeline\\src\\main\\resources\\excel\\MiMovistar_Recargas.xlsx");
+            ExcelFileToRead = new FileInputStream("C:\\Users\\Abraham Rivera\\Desktop\\DALE\\Demo_Pipeline\\src\\main\\resources\\excel\\MiMovistar_Recargas.xlsx");
             XSSFWorkbook wb = new XSSFWorkbook(ExcelFileToRead);
             String ip;
             ip = String.valueOf(wb.getSheetAt(0).getRow(1).getCell(11));
             String result = blockIP(ip);
+            System.out.println(ip);
             System.out.println(result);
         } catch (IOException e) {
-            System.out.println (e.toString());
+            System.out.println(e.toString());
+        } finally {
+            ExcelFileToRead.close();  // Multiple streams were opened. Only the last is closed.
         }
     }
 
@@ -38,17 +42,20 @@ public class CallerJSON_MiMovistarRecargaV2 {
         return ExcelReader.data(EXCEL_WEB, RECARGAS_WEB);
     }
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args) throws IOException {
+        InputStream ExcelFileToRead = null;
         try {
-            InputStream ExcelFileToRead = new FileInputStream("C:\\Users\\Abraham Rivera\\Desktop\\DALE\\Demo_Pipeline\\src\\main\\resources\\excel\\MiMovistar_Recargas.xlsx");
+            ExcelFileToRead = new FileInputStream("C:\\Users\\Abraham Rivera\\Desktop\\DALE\\Demo_Pipeline\\src\\main\\resources\\excel\\MiMovistar_Recargas.xlsx");
             XSSFWorkbook wb = new XSSFWorkbook(ExcelFileToRead);
             String ip;
             ip = String.valueOf(wb.getSheetAt(0).getRow(1).getCell(11));
             String result = blockIP(ip);
+            System.out.println(ip);
             System.out.println(result);
         } catch (IOException e) {
-            System.out.println (e.toString());
+            System.out.println(e.toString());
+        } finally {
+            ExcelFileToRead.close();  // Multiple streams were opened. Only the last is closed.
         }
 
     }

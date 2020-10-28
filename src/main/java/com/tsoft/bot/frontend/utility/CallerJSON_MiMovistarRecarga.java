@@ -1,5 +1,6 @@
 package com.tsoft.bot.frontend.utility;
 
+import com.mongodb.Cursor;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
@@ -25,27 +26,10 @@ public class CallerJSON_MiMovistarRecarga {
     private static final String COLUMNA_TELEFONO = "TELEFONO";
     private static final String COLUMNA_SERVER = "SERVER";
 
-    public static void API_API_TEST_recargas() {
+    public static void API_API_TEST_recargas() throws IOException {
+        InputStream ExcelFileToRead = null;
         try {
-            InputStream ExcelFileToRead = new FileInputStream("C:\\Users\\Abraham Rivera\\Desktop\\DALE\\Demo_Pipeline\\src\\main\\resources\\excel\\MiMovistar_Recargas.xlsx");
-            XSSFWorkbook wb = new XSSFWorkbook(ExcelFileToRead);
-            String ip;
-            ip = String.valueOf(wb.getSheetAt(0).getRow(1).getCell(11));
-            String result = blockIP(ip);
-            System.out.println(result);
-        } catch (IOException e) {
-            System.out.println (e.toString());
-        }
-    }
-
-    private List<HashMap<String, String>> getData() throws Throwable {
-        return ExcelReader.data(EXCEL_WEB, RECARGAS_WEB);
-    }
-
-    public static void main(String[] args) {
-
-        try {
-            InputStream ExcelFileToRead = new FileInputStream("C:\\Users\\Abraham Rivera\\Desktop\\DALE\\Demo_Pipeline\\src\\main\\resources\\excel\\MiMovistar_Recargas.xlsx");
+            ExcelFileToRead = new FileInputStream("C:\\Users\\Abraham Rivera\\Desktop\\DALE\\Demo_Pipeline\\src\\main\\resources\\excel\\MiMovistar_Recargas.xlsx");
             XSSFWorkbook wb = new XSSFWorkbook(ExcelFileToRead);
             String ip;
             ip = String.valueOf(wb.getSheetAt(0).getRow(1).getCell(11));
@@ -53,8 +37,33 @@ public class CallerJSON_MiMovistarRecarga {
             System.out.println(ip);
             System.out.println(result);
         } catch (IOException e) {
-            System.out.println (e.toString());
+            System.out.println(e.toString());
+        } finally {
+            ExcelFileToRead.close();  // Multiple streams were opened. Only the last is closed.
         }
+    }
+
+    private List<HashMap<String, String>> getData() throws Throwable {
+        return ExcelReader.data(EXCEL_WEB, RECARGAS_WEB);
+    }
+
+    public static void main(String[] args) throws IOException {
+
+        InputStream ExcelFileToRead = null;
+        try {
+            ExcelFileToRead = new FileInputStream("C:\\Users\\Abraham Rivera\\Desktop\\DALE\\Demo_Pipeline\\src\\main\\resources\\excel\\MiMovistar_Recargas.xlsx");
+            XSSFWorkbook wb = new XSSFWorkbook(ExcelFileToRead);
+            String ip;
+            ip = String.valueOf(wb.getSheetAt(0).getRow(1).getCell(11));
+            String result = blockIP(ip);
+            System.out.println(ip);
+            System.out.println(result);
+        } catch (IOException e) {
+            System.out.println(e.toString());
+        } finally {
+            ExcelFileToRead.close();  // Multiple streams were opened. Only the last is closed.
+        }
+
 
     }
 
