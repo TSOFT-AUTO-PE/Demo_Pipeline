@@ -65,8 +65,7 @@ pipeline {
       }
       stage('Cleaning WS') {
             steps {
-            dir('TDP Mi Movistar Recarga Web') {
-                deleteDir()
+            cleanWs()
 }
 
             }
