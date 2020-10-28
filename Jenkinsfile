@@ -28,6 +28,7 @@ pipeline {
                                             //    error "Pipeline aborted due to Quality gate failure: ${qg.status}"
                                            //     }
                                          //   }
+                                         
                     }
 
                     }
@@ -64,7 +65,7 @@ pipeline {
       }
       stage('Cleaning WS') {
             steps {
-            dir('target') {
+            dir('TDP Mi Movistar Recarga Web') {
                 deleteDir()
 }
 
