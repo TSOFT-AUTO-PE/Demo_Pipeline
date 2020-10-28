@@ -22,7 +22,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cee7dd2-1ac3-4e12-9c09-212b020005a1" name="Default Changelist" comment="Se modifica el Jenkinsfile - Delet error on Sonar v.8" />
+    <list default="true" id="5cee7dd2-1ac3-4e12-9c09-212b020005a1" name="Default Changelist" comment="Se modifica el Jenkinsfile - Cambio CallerJSON_MiMovistarRecarga v.15">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tsoft/bot/frontend/utility/CallerJSON_MiMovistarRecarga.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tsoft/bot/frontend/utility/CallerJSON_MiMovistarRecarga.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tsoft/bot/frontend/utility/CallerJSON_MiMovistarRecargaV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tsoft/bot/frontend/utility/CallerJSON_MiMovistarRecargaV2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/excel/MiMovistar_Recargas.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/excel/MiMovistar_Recargas.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tsoft/bot/frontend/utility/CallerJSON_MiMovistarRecarga.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tsoft/bot/frontend/utility/CallerJSON_MiMovistarRecarga.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tsoft/bot/frontend/utility/CallerJSON_MiMovistarRecargaV2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tsoft/bot/frontend/utility/CallerJSON_MiMovistarRecargaV2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/excel/MiMovistar_Recargas.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/excel/MiMovistar_Recargas.xlsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +67,33 @@
       <recent name="C:\Users\Abraham Rivera\Desktop\SUPERMERCADO\SPSA.ECommerce.Tests\web-automation-framework_PlazaVea\src\main\resources\excel" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Recargas en Mi Movistar WEB PUBLICA (Generando automáticamente Token 2 URL)">
+  <component name="RunManager" selected="Application.CallerJSON_MiMovistarRecarga">
+    <configuration name="CallerJSON_MiMovistarRecarga" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tsoft.bot.frontend.utility.CallerJSON_MiMovistarRecarga" />
+      <module name="web-automation-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tsoft.bot.frontend.utility.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CallerJSON_MiMovistarRecargaV2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tsoft.bot.frontend.utility.CallerJSON_MiMovistarRecargaV2" />
+      <module name="web-automation-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tsoft.bot.frontend.utility.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Feature: ValidarInicioSesionValidoUsuarioRecurrente" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/Services/PlazaVea/ValidarInicioSesionValidoUsuarioRecurrente.feature" />
@@ -101,6 +135,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CallerJSON_MiMovistarRecarga" />
+        <item itemvalue="Application.CallerJSON_MiMovistarRecargaV2" />
         <item itemvalue="Cucumber Java.Scenario: Recargas en Mi Movistar WEB PUBLICA (Generando automáticamente Token 2 URL)" />
         <item itemvalue="Cucumber Java.Feature: ValidarInicioSesionValidoUsuarioRecurrente" />
       </list>
@@ -164,7 +200,42 @@
       <option name="project" value="LOCAL" />
       <updated>1603850343611</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Se modifica el Jenkinsfile - Delet error on Sonar v.9">
+      <created>1603851352469</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603851352469</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Se modifica el Jenkinsfile - Delet error on Sonar v.9">
+      <created>1603851716692</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603851716692</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Se modifica el Jenkinsfile - Delete error on Sonar v.12">
+      <created>1603853332039</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603853332039</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Se modifica el Jenkinsfile - Delete error on Sonar v.13">
+      <created>1603854230598</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1603854230598</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Se modifica el Jenkinsfile - Cambio CallerJSON_MiMovistarRecarga v.13">
+      <created>1603857376938</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1603857376938</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,7 +258,14 @@
     <MESSAGE value="Se modifica el Jenkinsfile - Stage SONARQ v.6" />
     <MESSAGE value="Se modifica el Jenkinsfile - Stage SONARQ v.7" />
     <MESSAGE value="Se modifica el Jenkinsfile - Delet error on Sonar v.8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se modifica el Jenkinsfile - Delet error on Sonar v.8" />
+    <MESSAGE value="Se modifica el Jenkinsfile - Delet error on Sonar v.9" />
+    <MESSAGE value="Se modifica el Jenkinsfile - Delete error on Sonar v.10" />
+    <MESSAGE value="Se modifica el Jenkinsfile - Delete error on Sonar v.11" />
+    <MESSAGE value="Se modifica el Jenkinsfile - Delete error on Sonar v.12" />
+    <MESSAGE value="Se modifica el Jenkinsfile - Delete error on Sonar v.13" />
+    <MESSAGE value="Se modifica el Jenkinsfile - Cambio CallerJSON_MiMovistarRecarga v.13" />
+    <MESSAGE value="Se modifica el Jenkinsfile - Cambio CallerJSON_MiMovistarRecarga v.15" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se modifica el Jenkinsfile - Cambio CallerJSON_MiMovistarRecarga v.15" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603821784897">
@@ -198,25 +276,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603820988658" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603821522594">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603858312926">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603821522594" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603821522594">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603858312926" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603858312925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603821522594" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603821522594">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603858312925" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603858312925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603821522594" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603821522594">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603858312925" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603858312926">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603821522594" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603850345643">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603858312926" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603857379633">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603850345643" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603857379633" />
+    <state x="660" y="277" key="refactoring.ChangeSignatureDialog" timestamp="1603856741886">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="660" y="277" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603856741886" />
   </component>
 </project>
