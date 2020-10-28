@@ -1,5 +1,6 @@
 package com.tsoft.bot.frontend.utility;
 
+import com.mongodb.client.gridfs.model.GridFSFile;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
@@ -7,7 +8,15 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -21,20 +30,23 @@ public class CallerJSON_MiMovistarRecargaV2 {
     private static final String COLUMNA_URL = "URL";
     private static final String COLUMNA_TELEFONO = "TELEFONO";
 
-    public static void API_API_TEST_recargas() throws IOException {
-        InputStream ExcelFileToRead = null;
+
+    public static void API_API_TEST_recargas(){
         try {
-            ExcelFileToRead = new FileInputStream("C:\\Users\\Abraham Rivera\\Desktop\\DALE\\Demo_Pipeline\\src\\main\\resources\\excel\\MiMovistar_Recargas.xlsx");
-            XSSFWorkbook wb = new XSSFWorkbook(ExcelFileToRead);
-            String ip;
-            ip = String.valueOf(wb.getSheetAt(0).getRow(1).getCell(11));
-            String result = blockIP(ip);
-            System.out.println(ip);
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder bulider = factory.newDocumentBuilder();
+            Document doc = bulider.parse("C:\\Users\\Abraham Rivera\\Desktop\\DALE\\Demo_Pipeline\\src\\main\\resources\\config\\server.xml");
+            NodeList ip2 = doc.getElementsByTagName("student");
+            String Yeah = null;
+            for (int i = 0; i < ip2.getLength(); i++) {
+                Node n = ip2.item(i);
+                Element e = (Element) n;
+                Yeah = (e.getElementsByTagName("ip").item(0).getTextContent());
+            }
+            String result = blockIP(Yeah);
             System.out.println(result);
-        } catch (IOException e) {
+        } catch (IOException | ParserConfigurationException | SAXException e) {
             System.out.println(e.toString());
-        } finally {
-            ExcelFileToRead.close();  // Multiple streams were opened. Only the last is closed.
         }
     }
 
@@ -42,20 +54,22 @@ public class CallerJSON_MiMovistarRecargaV2 {
         return ExcelReader.data(EXCEL_WEB, RECARGAS_WEB);
     }
 
-    public static void main(String[] args) throws IOException {
-        InputStream ExcelFileToRead = null;
+    public static void main(String[] args){
         try {
-            ExcelFileToRead = new FileInputStream("C:\\Users\\Abraham Rivera\\Desktop\\DALE\\Demo_Pipeline\\src\\main\\resources\\excel\\MiMovistar_Recargas.xlsx");
-            XSSFWorkbook wb = new XSSFWorkbook(ExcelFileToRead);
-            String ip;
-            ip = String.valueOf(wb.getSheetAt(0).getRow(1).getCell(11));
-            String result = blockIP(ip);
-            System.out.println(ip);
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder bulider = factory.newDocumentBuilder();
+            Document doc = bulider.parse("C:\\Users\\Abraham Rivera\\Desktop\\DALE\\Demo_Pipeline\\src\\main\\resources\\config\\server.xml");
+            NodeList ip2 = doc.getElementsByTagName("student");
+            String Yeah = null;
+            for (int i = 0; i < ip2.getLength(); i++) {
+                Node n = ip2.item(i);
+                Element e = (Element) n;
+                Yeah = (e.getElementsByTagName("ip").item(0).getTextContent());
+            }
+            String result = blockIP(Yeah);
             System.out.println(result);
-        } catch (IOException e) {
+        } catch (IOException | ParserConfigurationException | SAXException e) {
             System.out.println(e.toString());
-        } finally {
-            ExcelFileToRead.close();  // Multiple streams were opened. Only the last is closed.
         }
 
     }
