@@ -16,7 +16,7 @@ pipeline {
             git 'https://github.com/TSOFT-AUTO-PE/Demo_Pipeline.git'
             }
         }
-         stage('Quality Gate SonarQ') {
+         stage('Run Static Analysis with SonarQ') {
                     steps {
                     script{
                         withSonarQubeEnv('sonarserver') {
