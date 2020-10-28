@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cee7dd2-1ac3-4e12-9c09-212b020005a1" name="Default Changelist" comment="Se modifica el Jenkinsfile - Stage SONARQ v.6" />
+    <list default="true" id="5cee7dd2-1ac3-4e12-9c09-212b020005a1" name="Default Changelist" comment="Se modifica el Jenkinsfile - Stage SONARQ v.7" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -150,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603849264189</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Se modifica el Jenkinsfile - Stage SONARQ v.7">
+      <created>1603849558638</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603849558638</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,7 +178,8 @@
     <MESSAGE value="Se modifica el Jenkinsfile - Stage HTML v.4" />
     <MESSAGE value="Se modifica el Jenkinsfile - Stage SONARQ v.5" />
     <MESSAGE value="Se modifica el Jenkinsfile - Stage SONARQ v.6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se modifica el Jenkinsfile - Stage SONARQ v.6" />
+    <MESSAGE value="Se modifica el Jenkinsfile - Stage SONARQ v.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se modifica el Jenkinsfile - Stage SONARQ v.7" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603821784897">
@@ -198,9 +206,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603821522594" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603849266441">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603849560909">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603849266441" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603849560909" />
   </component>
 </project>
