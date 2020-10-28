@@ -16,6 +16,13 @@ pipeline {
             git 'https://github.com/TSOFT-AUTO-PE/Demo_Pipeline.git'
             }
         }
+         stage('Quality Gate SonarQ') {
+                    steps {
+                    withSonarQubeEnv(credentialsId: 'sonar-api-key') {
+                        // some block
+                    }
+                    }
+              }
         stage('Clean the Script') {
             steps {
             bat 'mvn clean'
