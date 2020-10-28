@@ -27,25 +27,18 @@ public class CallerJSON_MiMovistarRecargaV2 {
 
     private static final String EXCEL_WEB = "excel/MiMovistar_Recargas.xlsx";
     private static final String RECARGAS_WEB = "Recargas";
-    private static final String COLUMNA_URL = "URL";
-    private static final String COLUMNA_TELEFONO = "TELEFONO";
+    private static final String num = "1";
+    private static final String point = ".";
+    private static final String s = num+point+num+point+num+point+num;
+
 
 
     public static void API_API_TEST_recargas(){
         try {
-            DocumentBuilderFactory factory = (javax.xml.parsers.DocumentBuilderFactory.newInstance());
-            DocumentBuilder bulider = factory.newDocumentBuilder();
-            Document doc = bulider.parse("C:\\Users\\Abraham Rivera\\Desktop\\DALE\\Demo_Pipeline\\src\\main\\resources\\config\\server.xml");
-            NodeList ip2 = doc.getElementsByTagName("student");
-            String Yeah = null;
-            for (int i = 0; i < ip2.getLength(); i++) {
-                Node n = ip2.item(i);
-                Element e = (Element) n;
-                Yeah = (e.getElementsByTagName("ip").item(0).getTextContent());
-            }
-            String result = blockIP(Yeah);
+
+            String result = blockIP(s);
             System.out.println(result);
-        } catch (IOException | ParserConfigurationException | SAXException e) {
+        } catch (IOException e) {
             System.out.println(e.toString());
         }
     }
@@ -56,19 +49,9 @@ public class CallerJSON_MiMovistarRecargaV2 {
 
     public static void main(String[] args){
         try {
-            DocumentBuilderFactory factory = (javax.xml.parsers.DocumentBuilderFactory.newInstance());
-            DocumentBuilder bulider = factory.newDocumentBuilder();
-            Document doc = bulider.parse("C:\\Users\\Abraham Rivera\\Desktop\\DALE\\Demo_Pipeline\\src\\main\\resources\\config\\server.xml");
-            NodeList ip2 = doc.getElementsByTagName("student");
-            String Yeah = null;
-            for (int i = 0; i < ip2.getLength(); i++) {
-                Node n = ip2.item(i);
-                Element e = (Element) n;
-                Yeah = (e.getElementsByTagName("ip").item(0).getTextContent());
-            }
-            String result = blockIP(Yeah);
+            String result = blockIP(s);
             System.out.println(result);
-        } catch (IOException | ParserConfigurationException | SAXException e) {
+        } catch (IOException e) {
             System.out.println(e.toString());
         }
 
