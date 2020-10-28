@@ -18,9 +18,18 @@ pipeline {
         }
          stage('Quality Gate SonarQ') {
                     steps {
-                    withSonarQubeEnv(credentialsId: 'sonar-api-key') {
-                        // some block
+                    script{
+                        withSonarQubeEnv('sonarserver') {
+                                             sh "mvn sonar:sonar"
+                                            }
+                                            timeout(time: 1, unit: 'HOURS'){
+                                            def qg = waitForQualityGate()
+                                                if(qg.status != 'OK'){
+                                                error "Pipeline aborted due to Quality gate failure: ${qg.status}"
+                                                }
+                                            }
                     }
+
                     }
               }
         stage('Clean the Script') {
