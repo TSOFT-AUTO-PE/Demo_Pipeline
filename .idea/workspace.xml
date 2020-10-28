@@ -22,9 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cee7dd2-1ac3-4e12-9c09-212b020005a1" name="Default Changelist" comment="Se modifica el Jenkinsfile - Stage HTML v.4">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5cee7dd2-1ac3-4e12-9c09-212b020005a1" name="Default Changelist" comment="Se modifica el Jenkinsfile - Stage SONARQ v.6" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +136,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603823351128</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Se modifica el Jenkinsfile - Stage SONARQ v.5">
+      <created>1603848969277</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603848969278</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Se modifica el Jenkinsfile - Stage SONARQ v.6">
+      <created>1603849264189</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603849264189</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,7 +169,9 @@
     <MESSAGE value="Se modifica el Jenkinsfilev.3" />
     <MESSAGE value="Se modifica el Jenkinsfile v.4" />
     <MESSAGE value="Se modifica el Jenkinsfile - Stage HTML v.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se modifica el Jenkinsfile - Stage HTML v.4" />
+    <MESSAGE value="Se modifica el Jenkinsfile - Stage SONARQ v.5" />
+    <MESSAGE value="Se modifica el Jenkinsfile - Stage SONARQ v.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se modifica el Jenkinsfile - Stage SONARQ v.6" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603821784897">
@@ -184,9 +198,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603821522594" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603823352856">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603849266441">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603823352856" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603849266441" />
   </component>
 </project>

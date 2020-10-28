@@ -20,7 +20,7 @@ pipeline {
                     steps {
                     script{
                         withSonarQubeEnv('sonarserver') {
-                                             sh "mvn sonar:sonar"
+                                             bat "mvn sonar:sonar"
                                             }
                                             timeout(time: 1, unit: 'HOURS'){
                                             def qg = waitForQualityGate()
