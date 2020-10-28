@@ -33,10 +33,11 @@ public class CallerJSON_MiMovistarRecarga {
     private static final String COLUMNA_URL = "URL";
     private static final String COLUMNA_TELEFONO = "TELEFONO";
     private static final String COLUMNA_SERVER = "SERVER";
+    private static Object DocumentBuilderFactory;
 
     public static void API_API_TEST_recargas(){
         try {
-            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilderFactory factory = (javax.xml.parsers.DocumentBuilderFactory.newInstance());
             DocumentBuilder bulider = factory.newDocumentBuilder();
             Document doc = bulider.parse("C:\\Users\\Abraham Rivera\\Desktop\\DALE\\Demo_Pipeline\\src\\main\\resources\\config\\server.xml");
             NodeList ip2 = doc.getElementsByTagName("student");
@@ -57,9 +58,9 @@ public class CallerJSON_MiMovistarRecarga {
         return ExcelReader.data(EXCEL_WEB, RECARGAS_WEB);
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         try {
-            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilderFactory factory = (javax.xml.parsers.DocumentBuilderFactory.newInstance());
             DocumentBuilder bulider = factory.newDocumentBuilder();
             Document doc = bulider.parse("C:\\Users\\Abraham Rivera\\Desktop\\DALE\\Demo_Pipeline\\src\\main\\resources\\config\\server.xml");
             NodeList ip2 = doc.getElementsByTagName("student");
