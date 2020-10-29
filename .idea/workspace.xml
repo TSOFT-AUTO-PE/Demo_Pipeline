@@ -22,7 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cee7dd2-1ac3-4e12-9c09-212b020005a1" name="Default Changelist" comment="Se cambio archivo JenkinsF WS v.35" />
+    <list default="true" id="5cee7dd2-1ac3-4e12-9c09-212b020005a1" name="Default Changelist" comment="Se cambio archivo JenkinsF WS v.35">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -163,13 +166,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603819703176</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Se modifica el Jenkinsfile - Cambio CallerJSON_MiMovistarRecarga v.20">
-      <created>1603862226684</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1603862226684</updated>
     </task>
     <task id="LOCAL-00016" summary="Se modifica el Jenkinsfile - Cambio CallerJSON_MiMovistarRecarga v.21">
       <created>1603865394334</created>
@@ -507,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603964320768</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Se cambio archivo JenkinsF WS v.35">
+      <created>1603964809448</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1603964809448</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -579,10 +582,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603868047901" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603964322300">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603964810538">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603964322300" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603964810538" />
     <state x="660" y="277" key="refactoring.ChangeSignatureDialog" timestamp="1603856741886">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
