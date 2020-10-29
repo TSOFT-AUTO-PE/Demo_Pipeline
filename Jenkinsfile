@@ -5,7 +5,7 @@ pipeline {
     }
      parameters {
       string(name: 'TEST_TAG', defaultValue: 'mvn test -Dcucumber.options="--tags @InputYourTAG', description: 'Enter the Tag of your Test, just change the TAG in this line')
-      string(name: 'DATA_FILE', defaultValue: 'C:\Users\admin\...', description: 'Enter the Route of the DATA INPUT')
+      string(name: 'DATA_FILE', defaultValue: 'Enter the Route of the DATA INPUT', description: 'Enter the Route of the DATA INPUT')
      }
 
    stages {
