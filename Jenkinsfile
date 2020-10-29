@@ -3,6 +3,11 @@ pipeline {
     agent {
         node { label 'Abraham_PC' }
     }
+     parameters {
+      string(tagtest: 'TAG', defaultValue: '', description: 'Enter the Tag of your Test')
+
+
+     }
 
    stages {
        stage('Building') {
@@ -45,7 +50,7 @@ pipeline {
         }
         stage('Running the Test') {
             steps {
-            bat 'mvn test'
+            bat 'mvn test -Dcucumber.options="--tags ${params.TAG}"'
             }
       }
         stage('Archive Results WORD') {
