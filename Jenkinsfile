@@ -5,7 +5,7 @@ pipeline {
     }
      parameters {
       string(name: 'TEST_TAG', defaultValue: 'mvn test -Dcucumber.options="--tags @InputYourTAG', description: 'Enter the Tag of your Test, just change the TAG in this line')
-      file description: 'Ingresa Excel Input', name: 'excelfile'
+      file description: 'Ingresa Excel Input', name: 'TDP Mi Movistar Recarga Web\src\main\resources\excel\MiMovistar_Recargas.xlxs'
      }
 
    stages {
@@ -20,11 +20,6 @@ pipeline {
             git 'https://github.com/TSOFT-AUTO-PE/Demo_Pipeline.git'
             }
         }
-        stage('Upload Data') {
-               steps {
-                  bat 'REPLACE $excelfile /src/main/resources/excel/MiMovistar_Recargas.xlxs'
-                  }
-              }
          stage('Run Static Analysis with SonarQ') {
                     steps {
                     script{
