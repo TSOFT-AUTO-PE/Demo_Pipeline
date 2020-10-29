@@ -20,7 +20,9 @@ pipeline {
             }
         }
         stage("upload") {
+        steps {
         def inputFile = input message: 'Upload file', parameters: [file(name: "$workspace/data.zip")]
+        }
                 }
          stage('Run Static Analysis with SonarQ') {
                     steps {
