@@ -4,7 +4,7 @@ pipeline {
         node { label 'Abraham_PC' }
     }
      parameters {
-      string(name: 'TAG', defaultValue: '', description: 'Enter the Tag of your Test')
+      string(name: 'TEST_TAG', defaultValue: '', description: 'Enter the Tag of your Test')
      }
 
    stages {
@@ -48,7 +48,7 @@ pipeline {
         }
         stage('Running the Test') {
             steps {
-            bat 'mvn test -Dcucumber.options="--tags "'${params.TAG}
+            bat 'mvn test -Dcucumber.options="--tags "'${params.TEST_TAG}
             }
       }
         stage('Archive Results WORD') {
