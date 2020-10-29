@@ -4,9 +4,7 @@ pipeline {
         node { label 'Abraham_PC' }
     }
      parameters {
-      string(tagtest: 'TAG', defaultValue: '', description: 'Enter the Tag of your Test')
-
-
+      string(name: 'TAG', defaultValue: '', description: 'Enter the Tag of your Test')
      }
 
    stages {
