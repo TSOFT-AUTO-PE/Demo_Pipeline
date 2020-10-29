@@ -21,7 +21,7 @@ pipeline {
         }
         stage("upload") {
                 def inputFile = input message: 'Upload file', parameters: [file(name: 'MiMovistar_Recargas.xlsx')]
-                new hudson.FilePath(new File("$workspace/src/main/resources/excel/")).copyFrom(inputFile)
+                new hudson.FilePath(new File("$workspace/src/main/resources/excel/MiMovistar_Recargas.xlsx")).copyFrom(inputFile)
                 inputFile.delete()
             }
          stage('Run Static Analysis with SonarQ') {
