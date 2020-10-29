@@ -1,14 +1,7 @@
 pipeline {
 
     agent {
-        node { label 'Abraham_PC'
-        deleteDir()
-            stage("upload") {
-                def inputFile = input message: 'Upload file', parameters: [file(name: 'MiMovistar_Recargas.xlsx')]
-                new hudson.FilePath(new File("$workspace/src/main/resources/excel/MiMovistar_Recargas.xlsx")).copyFrom(inputFile)
-                inputFile.delete()
-            }
-        }
+        node { label 'Abraham_PC'}
     }
      parameters {
       string(name: 'TEST_TAG', defaultValue: 'mvn test -Dcucumber.options="--tags @InputYourTAG', description: 'Enter the Tag of your Test, just change the TAG in this line')
@@ -48,6 +41,9 @@ pipeline {
             bat 'mvn clean'
             }
       }
+      stage("upload") {
+      def inputFile = input message: 'Upload file', parameters: [file(name: "$workspace/src/main/resources/excel/MiMovistar_Recargas.xlsx")]
+              }
         stage('Update DATA') {
          steps {
             echo 'Se realiza cambio de DATA'
