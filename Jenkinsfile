@@ -24,7 +24,7 @@ pipeline {
         }
               stage('Update DATA') {
                           steps {
-                          bat "REPLACE ${params.DATA_EXCEL} .\\src\\main\\resources\\excel"
+                          bat "REPLACE $DATA_EXCEL .\\src\\main\\resources\\excel"
 
                           }
                     }
