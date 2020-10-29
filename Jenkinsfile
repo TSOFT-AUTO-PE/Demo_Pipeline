@@ -5,6 +5,7 @@ pipeline {
     }
      parameters {
       string(name: 'TEST_TAG', defaultValue: 'mvn test -Dcucumber.options="--tags @InputYourTAG', description: 'Enter the Tag of your Test, just change the TAG in this line')
+      string(name: 'DATA_FILE', defaultValue: 'C:\Users\admin\...', description: 'Enter the Route of the DATA INPUT')
      }
 
    stages {
@@ -41,6 +42,12 @@ pipeline {
             bat 'mvn clean'
             }
       }
+       stage('Update DATA') {
+                  steps {
+                  bat "REPLACE ${params.DATA_FILE} C:\Jenkins\workspace\TDP Mi Movistar Recarga Web\src\main\resources\excel"
+
+                  }
+            }
         stage('Running the Test') {
             steps {
             bat "${params.TEST_TAG}"
