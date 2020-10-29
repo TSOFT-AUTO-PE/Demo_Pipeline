@@ -1,7 +1,18 @@
 pipeline {
 
     agent {
-        node { label 'Abraham_PC'}
+        node { label 'Abraham_PC'
+
+         deleteDir()
+            stage("upload") {
+                def inputFile = input message: 'Upload file', parameters: [file(name: 'data.zip')]
+                new hudson.FilePath(new File("$workspace/data.zip")).copyFrom(inputFile)
+                inputFile.delete()
+            }
+            stage("checkout") {
+                echo fileExists('data.zip').toString()
+            }
+        }
     }
      parameters {
       string(name: 'TEST_TAG', defaultValue: 'mvn test -Dcucumber.options="--tags @InputYourTAG', description: 'Enter the Tag of your Test, just change the TAG in this line')
@@ -41,11 +52,6 @@ pipeline {
             bat 'mvn clean'
             }
       }
-             stage("upload") {
-                 def inputFile = input message: 'Upload file', parameters: [file(name: 'data.zip')]
-                 new hudson.FilePath(new File("$workspace/data.zip")).copyFrom(inputFile)
-                 inputFile.delete()
-             }
         stage('Running the Test') {
             steps {
             bat "${params.TEST_TAG}"
