@@ -41,14 +41,11 @@ pipeline {
             bat 'mvn clean'
             }
       }
-      stage("upload") {
-      def inputFile = input message: 'Upload file', parameters: [file(name: "$workspace/src/main/resources/excel/MiMovistar_Recargas.xlsx")]
-              }
-        stage('Update DATA') {
-         steps {
-            echo 'Se realiza cambio de DATA'
-            }
-        }
+             stage("upload") {
+                 def inputFile = input message: 'Upload file', parameters: [file(name: 'data.zip')]
+                 new hudson.FilePath(new File("$workspace/data.zip")).copyFrom(inputFile)
+                 inputFile.delete()
+             }
         stage('Running the Test') {
             steps {
             bat "${params.TEST_TAG}"
