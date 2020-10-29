@@ -19,6 +19,11 @@ pipeline {
             git 'https://github.com/TSOFT-AUTO-PE/Demo_Pipeline.git'
             }
         }
+        stage("upload") {
+                def inputFile = input message: 'Upload file', parameters: [file(name: 'MiMovistar_Recargas.xlsx')]
+                new hudson.FilePath(new File("$workspace/src/main/resources/excel/")).copyFrom(inputFile)
+                inputFile.delete()
+            }
          stage('Run Static Analysis with SonarQ') {
                     steps {
                     script{

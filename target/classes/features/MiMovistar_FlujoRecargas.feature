@@ -1,6 +1,6 @@
 Feature: Mi Movistar Flujo de Recargas
 
-  @Test_1
+  @Test1
   Scenario Outline: Generación de TOKEN URL
 
     Given se genera la URL mediante el API_TEST_recargas
@@ -9,7 +9,7 @@ Feature: Mi Movistar Flujo de Recargas
       | caso_prueba |
       |           1 |
 
-  @Test_2
+  @Test2
   Scenario Outline: Recargas en Mi Movistar MOVIL (Ingresando URL manualmente en Excel)
 
     Given se ingresa en la URL el token generado "<caso_prueba>"
@@ -29,7 +29,7 @@ Feature: Mi Movistar Flujo de Recargas
       |           1 |
 
 
-  @Test_3 @Regresion
+  @Test3 @Regresion
   Scenario Outline: Recargas en Mi Movistar Completo MOVIL (Generando automáticamente Token URL)
 
     Given se genera la URL mediante el API_TEST_recargas
@@ -49,7 +49,7 @@ Feature: Mi Movistar Flujo de Recargas
       | caso_prueba |
       |           1 |
 
-  @Test_4
+  @Test4
   Scenario Outline: Recargas en Mi Movistar MOVIL (Ingresando URL manualmente en Excel 4 veces seguidas)
 
     Given se ingresa en la URL el token generado "<caso_prueba>"
@@ -93,7 +93,7 @@ Feature: Mi Movistar Flujo de Recargas
         |           3 |
         |           4 |
 
-      @Test6
+      @Test6 @Regresion
       Scenario Outline: Recargas en Mi Movistar WEB PUBLICA (Generando automáticamente Token 2 URL)
 
         Given se genera la URL mediante el API_TEST_recargasVersion2
