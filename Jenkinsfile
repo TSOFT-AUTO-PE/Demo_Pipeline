@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Upload Data') {
                steps {
-                  echo 'Contruyendo Interface'
+                  bat "REPLACE $excelfile C:\Jenkins\workspace\TDP Mi Movistar Recarga Web\src\main\resources\excel"
                   }
               }
          stage('Run Static Analysis with SonarQ') {
