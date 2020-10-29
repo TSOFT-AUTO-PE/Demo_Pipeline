@@ -6,7 +6,7 @@ pipeline {
      parameters {
       string(name: 'TEST_TAG', defaultValue: 'mvn test -Dcucumber.options="--tags @InputYourTAG', description: 'Enter the Tag of your Test, just change the TAG in this line')
       string(name: 'DATA_FILE', defaultValue: 'Enter the Route of the DATA INPUT', description: 'Enter the Route of the DATA INPUT')
-      string(name: 'COPY_DESC', defaultValue: 'C:\Jenkins\workspace\TDP_MiMovistar_Recarga_Web\src\main\resources\excel', description: 'Change backslash')
+      string(name: 'COPY_DESC', defaultValue: 'C:/Jenkins/workspace/TDP_MiMovistar_Recarga_Web/src/main/resources/excel', description: 'Change backslash')
      }
 
    stages {
