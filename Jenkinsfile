@@ -5,6 +5,7 @@ pipeline {
     }
      parameters {
       string(name: 'TEST_TAG', defaultValue: 'mvn test -Dcucumber.options="--tags @InputYourTAG', description: 'Enter the Tag of your Test, just change the TAG in this line')
+      file description: 'Ingresa Excel Input', name: 'excelfile'
      }
 
    stages {
@@ -19,11 +20,11 @@ pipeline {
             git 'https://github.com/TSOFT-AUTO-PE/Demo_Pipeline.git'
             }
         }
-        stage("upload") {
-        steps {
-        def inputFile = input message: 'Upload file', parameters: [file(name: "$workspace/data.zip")]
-        }
-                }
+        stage('Upload Data') {
+               steps {
+                  echo 'Contruyendo Interface'
+                  }
+              }
          stage('Run Static Analysis with SonarQ') {
                     steps {
                     script{
