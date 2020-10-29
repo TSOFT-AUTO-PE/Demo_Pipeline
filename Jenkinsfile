@@ -5,8 +5,8 @@ pipeline {
     }
      parameters {
       string(name: 'TEST_TAG', defaultValue: 'mvn test -Dcucumber.options="--tags @InputYourTAG', description: 'Enter the Tag of your Test, just change the TAG in this line')
-      file description: 'Ingrese Excel Input', name: 'DATA_EXCEL'
-      //string(name: 'DATA_FILE', defaultValue: 'Enter the Route of the DATA INPUT', description: 'Enter the Route of the DATA INPUT')
+      //file description: 'Ingrese Excel Input', name: 'DATA_EXCEL'
+      string(name: 'DATA_FILE', defaultValue: 'Enter the Route of the DATA INPUT', description: 'Enter the Route of the DATA INPUT')
       //string(name: 'COPY_DESC', defaultValue: '.\\src\\main\\resources\\excel', description: 'Change backslash')
      }
 
@@ -24,7 +24,7 @@ pipeline {
         }
               stage('Update DATA') {
                           steps {
-                          bat "REPLACE $DATA_EXCEL .\\src\\main\\resources\\excel"
+                          bat "REPLACE ${params.DATA_FILE} .\\src\\main\\resources\\excel"
 
                           }
                     }
