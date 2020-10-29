@@ -44,7 +44,7 @@ pipeline {
       }
        stage('Update DATA') {
                   steps {
-                  bat "REPLACE ${params.DATA_FILE} C:\Jenkins\workspace\TDP Mi Movistar Recarga Web\src\main\resources\excel"
+                  bat "REPLACE ${params.DATA_FILE} src/main/resources/excel"
 
                   }
             }
