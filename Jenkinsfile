@@ -5,7 +5,7 @@ pipeline {
     }
      parameters {
       string(name: 'TEST_TAG', defaultValue: 'mvn test -Dcucumber.options="--tags @InputYourTAG', description: 'Enter the Tag of your Test, just change the TAG in this line')
-      file description: 'Ingresa Excel Input', name: 'TDP Mi Movistar Recarga Web\src\main\resources\excel\MiMovistar_Recargas.xlxs'
+      file description: 'Ingresa Excel Input', name: 'TDP Mi Movistar Recarga Web/src/main/resources/excel/MiMovistar_Recargas.xlxs'
      }
 
    stages {
