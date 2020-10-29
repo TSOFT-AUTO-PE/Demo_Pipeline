@@ -1,18 +1,7 @@
 pipeline {
 
     agent {
-        node { label 'Abraham_PC'
-
-         deleteDir()
-            stage("upload") {
-                def inputFile = input message: 'Upload file', parameters: [file(name: 'data.zip')]
-                new hudson.FilePath(new File("$workspace/data.zip")).copyFrom(inputFile)
-                inputFile.delete()
-            }
-            stage("checkout") {
-                echo fileExists('data.zip').toString()
-            }
-        }
+        node { label 'Abraham_PC'}
     }
      parameters {
       string(name: 'TEST_TAG', defaultValue: 'mvn test -Dcucumber.options="--tags @InputYourTAG', description: 'Enter the Tag of your Test, just change the TAG in this line')
@@ -30,6 +19,9 @@ pipeline {
             git 'https://github.com/TSOFT-AUTO-PE/Demo_Pipeline.git'
             }
         }
+        stage("upload") {
+        def inputFile = input message: 'Upload file', parameters: [file(name: "$workspace/data.zip")]
+                }
          stage('Run Static Analysis with SonarQ') {
                     steps {
                     script{
