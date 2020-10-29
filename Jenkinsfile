@@ -21,6 +21,12 @@ pipeline {
             git 'https://github.com/TSOFT-AUTO-PE/Demo_Pipeline.git'
             }
         }
+              stage('Update DATA') {
+                          steps {
+                          bat "REPLACE ${params.DATA_FILE} ${params.COPY_DESC}"
+
+                          }
+                    }
          stage('Run Static Analysis with SonarQ') {
                     steps {
                     script{
@@ -43,12 +49,7 @@ pipeline {
             bat 'mvn clean'
             }
       }
-       stage('Update DATA') {
-                  steps {
-                  bat "REPLACE ${params.DATA_FILE} ${params.COPY_DESC}"
 
-                  }
-            }
         stage('Running the Test') {
             steps {
             bat "${params.TEST_TAG}"
