@@ -67,10 +67,10 @@ pipeline {
                                               id: 'inputTAG', message: 'Please enter mvn TAG Description', parameters: [
                                               [$class: 'TextParameterDefinition', description: 'mvn test -Dcucumber.options="--tags @InputYourTAG',name: 'input']
                                              ])
-                             echo ("The TAG Test Running is: ${inputTAG}")
+                             echo ("The TAG Test Running is: ${input}")
+                             bat "${input}"
 
                       }
-                      bat "${params.input}"
                       }
                  }
 
