@@ -31,12 +31,12 @@ pipeline {
 
                           }
                     }
-         stage('Run Static Analysis with SonarQ') {
+         /*stage('Run Static Analysis with SonarQ') {
                     steps {
                     script{
                         withSonarQubeEnv('sonarserver') {
                                              bat "mvn sonar:sonar"
-                                            }
+                                            }*/
                                    //         timeout(time: 1, unit: 'HOURS'){
                                      //       def qg = waitForQualityGate()
                                          //       if(qg.status != 'OK'){
@@ -63,7 +63,7 @@ pipeline {
                                                         [$class: 'TextParameterDefinition', description: 'mvn test -Dcucumber.options="--tags @InputYourTAG',name: 'input']
                                                        ])
                                        echo ("The TAG Test Running is: ${userInputTxt}")
-                                       bat 'mvn test -Dcucumber.options="--tags '+${userInputTxt}
+                                       bat 'mvn test -Dcucumber.options="--tags ${userInputTxt}'
 
                                 }
                                 }
