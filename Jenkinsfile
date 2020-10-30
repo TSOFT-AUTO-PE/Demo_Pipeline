@@ -13,21 +13,6 @@ pipeline {
 
    stages {
 
-        stage('Especify the TAG') {
-                     steps {
-                         script {
-
-                             def userInputTxt = input(
-                                                 id: 'inputTAG', message: 'Please enter mvn TAG Description', parameters: [
-                                                 [$class: 'TextParameterDefinition', description: 'mvn test -Dcucumber.options="--tags @InputYourTAG',name: 'input']
-                                                ])
-                                echo ("The TAG Test Running is: ${userInputTxt}")
-
-
-                         }
-                         }
-                    }
-
        stage('Versioning') {
          steps {
             // Get some code from a GitHub repository
@@ -62,12 +47,26 @@ pipeline {
             bat 'mvn clean'
             }
       }
-          stage('Running the Test') {
-                             steps {
-                             bat "${userInputTxt}"
 
+        stage('Especify the TAG') {
+                            steps {
+                                script {
+
+                                    def userInputTxt = input(
+                                                        id: 'inputTAG', message: 'Please enter mvn TAG Description', parameters: [
+                                                        [$class: 'TextParameterDefinition', description: 'mvn test -Dcucumber.options="--tags @InputYourTAG',name: 'input']
+                                                       ])
+                                       echo ("The TAG Test Running is: ${userInputTxt}")
+                                       bat 'mvn test -Dcucumber.options="--tags '+${userInputTxt}
+
+                                }
+                                }
+                           }
+       /*   stage('Running the Test') {
+                             steps {
+                                bat "${userInputTxt}"
                              }
-                       }
+                       }*/
 
         stage('Archive Results WORD') {
             steps {
