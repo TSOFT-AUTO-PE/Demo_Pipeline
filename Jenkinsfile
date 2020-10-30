@@ -8,7 +8,7 @@ pipeline {
      }
 
       agent {
-             node { label "${params.NODE}"}
+             node { label "${params.NODE_NAME}"}
          }
 
    stages {
