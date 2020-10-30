@@ -13,11 +13,21 @@ pipeline {
 
    stages {
 
-       stage('Building') {
-         steps {
-            echo 'Contruyendo Interface'
-            }
-        }
+        stage('Especify the TAG') {
+                     steps {
+                         script {
+
+                             def userInputTxt = input(
+                                                 id: 'inputTAG', message: 'Please enter mvn TAG Description', parameters: [
+                                                 [$class: 'TextParameterDefinition', description: 'mvn test -Dcucumber.options="--tags @InputYourTAG',name: 'input']
+                                                ])
+                                echo ("The TAG Test Running is: ${userInputTxt}")
+
+
+                         }
+                         }
+                    }
+
        stage('Versioning') {
          steps {
             // Get some code from a GitHub repository
@@ -52,27 +62,12 @@ pipeline {
             bat 'mvn clean'
             }
       }
-
-        /*stage('Running the Test') {
-            steps {
-            bat "${params.TEST_TAG}"
-
-            }
-      }*/
-          stage('Especify the TAG for Runing Test') {
-                  steps {
-                      script {
-
-                          def userInputTxt = input(
-                                              id: 'inputTAG', message: 'Please enter mvn TAG Description', parameters: [
-                                              [$class: 'TextParameterDefinition', description: 'mvn test -Dcucumber.options="--tags @InputYourTAG',name: 'input']
-                                             ])
-                             echo ("The TAG Test Running is: ${userInputTxt}")
+          stage('Running the Test') {
+                             steps {
                              bat "${userInputTxt}"
 
-                      }
-                      }
-                 }
+                             }
+                       }
 
         stage('Archive Results WORD') {
             steps {

@@ -42,6 +42,7 @@ public class PageRecargasHome {
             ExtentReportUtil.INSTANCE.stepPass(driver, "Se inició correctamente la página Mi Movistar con el token");
             generateWord.sendText("Se inició correctamente la página Mi Movistar con el token");
             generateWord.addImageToWord(driver);
+            System.out.println("[LOG] Se ingresa al URL del Token Generado Correctamente");
         } catch (Exception e) {
             ExcelReader.writeCellValue(EXCEL_WEB, RECARGAS_WEB, 1, 9, "FAIL");
             ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
@@ -58,6 +59,7 @@ public class PageRecargasHome {
             String telefono = getData().get(recargas).get(COLUMNA_TELEFONO);
             driver.findElement(TXT_NUMERO_MOVISTAR).sendKeys(telefono);
             ExtentReportUtil.INSTANCE.stepPass(driver, "Se ingresó el telefono : " + telefono);
+            System.out.println("[LOG] Se ingresa el numero de celular: "+ telefono+" Correctamente");
             // generateWord.sendText("Se ingresó el telefono :" + telefono);
             // generateWord.addImageToWord(driver);
 
@@ -79,6 +81,7 @@ public class PageRecargasHome {
             ExtentReportUtil.INSTANCE.stepPass(driver, "Se ingresó el monto en soles : " + monto);
             generateWord.sendText("Se ingresó el monto en soles: " + monto);
             generateWord.addImageToWord(driver);
+            System.out.println("[LOG] Se ingresa el monto a Recargar: "+ monto+" Correctamente");
         } catch (Exception e) {
             ExcelReader.writeCellValue(EXCEL_WEB, RECARGAS_WEB, 1, 9, "FAIL");
             ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
@@ -95,6 +98,7 @@ public class PageRecargasHome {
             generateWord.sendText("Se dió clic en el botón Continuar ");
             generateWord.addImageToWord(driver);
             driver.findElement(BTN_CONTINUAR).click();
+            System.out.println("[LOG] Se da clic en el botón Cotinuar Correctamente");
         } catch (Exception e) {
             ExcelReader.writeCellValue(EXCEL_WEB, RECARGAS_WEB, 1, 9, "FAIL");
             ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());

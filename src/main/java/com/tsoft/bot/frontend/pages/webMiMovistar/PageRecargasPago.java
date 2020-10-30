@@ -48,6 +48,7 @@ public class PageRecargasPago {
             ExtentReportUtil.INSTANCE.stepPass(driver, "Se ingresó la tarjeta de crédito : "+tarjeta);
             generateWord.sendText("Se ingresó la tarjeta de crédito : 4919148107859067");
             generateWord.addImageToWord(driver);
+            System.out.println("[LOG] Se ingresa el numero de tarjeta: "+ tarjeta+" Correctamente");
         } catch (Exception e) {
             ExcelReader.writeCellValue(EXCEL_WEB, RECARGAS_WEB, 1, 9, "FAIL");
             ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
@@ -65,6 +66,7 @@ public class PageRecargasPago {
             select.selectByValue(mes);
             Thread.sleep(5000);
             ExtentReportUtil.INSTANCE.stepPass(driver, "Se ingresó el mes: "+mes);
+            System.out.println("[LOG] Se ingresa el mes de vencimiento: "+ mes+" Correctamente");
             // generateWord.sendText("Se ingresó el mes : 03");
             //generateWord.addImageToWord(driver);
         } catch (Exception e) {
@@ -84,6 +86,7 @@ public class PageRecargasPago {
             select.selectByVisibleText(anio);
             Thread.sleep(5000);
             ExtentReportUtil.INSTANCE.stepPass(driver, "Se ingresó el año: "+anio);
+            System.out.println("[LOG] Se ingresa el anio de vencimiento: "+ anio+" Correctamente");
             //generateWord.sendText("Se ingresó el año: 2020");
             //generateWord.addImageToWord(driver);
         } catch (Exception e) {
@@ -102,6 +105,7 @@ public class PageRecargasPago {
             driver.findElement(TXT_CVV2).sendKeys(cvv);
             Thread.sleep(5000);
             ExtentReportUtil.INSTANCE.stepPass(driver, "Se ingresó EL CÓDIGO CVV: "+cvv);
+            System.out.println("[LOG] Se ingresa el codigo de verificacion: "+cvv+" Correctamente");
             //generateWord.sendText("Se ingresó EL CÓDIGO CVV: " + cvv);
             //generateWord.addImageToWord(driver);
         } catch (Exception e) {
@@ -119,6 +123,7 @@ public class PageRecargasPago {
             generateWord.sendText("Se realizara la recarga con los datos de la tarjeta completos " );
             generateWord.addImageToWord(driver);
             driver.findElement(BTN_PAGAR2).click();
+            System.out.println("[LOG] Se de clic en el boton PAGAR Correctamente");
         } catch (Exception e) {
             ExcelReader.writeCellValue(EXCEL_WEB, RECARGAS_WEB, 1, 9, "FAIL");
             ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());

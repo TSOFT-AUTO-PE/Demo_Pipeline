@@ -44,6 +44,7 @@ public class PageRecargaFinal {
             generateWord.sendText("Finalizo la recarga correctamente con el ID de Pedido: " + codigo2);
             generateWord.addImageToWord(driver);
             driver.findElement(BTN_FINAL).click();
+            System.out.println("[LOG] Finaliza la recarga correctamente con el ID de Pedido: " + codigo2);
         }catch(Exception e){
             ExcelReader.writeCellValue(EXCEL_WEB, RECARGAS_WEB, 1, 9, "FAIL");
             ExtentReportUtil.INSTANCE.stepFail(driver, "Fallo el caso de prueba : " + e.getMessage());
