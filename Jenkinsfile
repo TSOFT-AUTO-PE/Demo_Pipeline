@@ -12,6 +12,12 @@ pipeline {
          }
 
    stages {
+     stage('Building') {
+            steps {
+               // Get some code from a GitHub repository
+               echo 'Creando WorkSpace'
+               }
+           }
 
        stage('Versioning') {
          steps {
