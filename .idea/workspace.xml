@@ -23,7 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cee7dd2-1ac3-4e12-9c09-212b020005a1" name="Default Changelist" comment="Se agrega el guardado del excel">
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,27 +169,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603819703176</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Se cambio archivo JenkinsF WS v.35">
-      <created>1603961950434</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1603961950434</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Se cambio archivo JenkinsF WS v.35">
-      <created>1603962093009</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1603962093009</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Se cambio archivo JenkinsF WS v.35">
-      <created>1603962163683</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1603962163683</updated>
     </task>
     <task id="LOCAL-00058" summary="Se cambio archivo JenkinsF WS v.35">
       <created>1603962648578</created>
@@ -512,7 +492,28 @@
       <option name="project" value="LOCAL" />
       <updated>1604116267598</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="Se agrega el guardado del excel">
+      <created>1604116385948</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1604116385948</updated>
+    </task>
+    <task id="LOCAL-00105" summary="Se agrega el guardado del excel">
+      <created>1604116397179</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1604116397179</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Se agrega el guardado del excel">
+      <created>1604116596124</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1604116596124</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,10 +585,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603966794284" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1604116269145">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1604116597574">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604116269144" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604116597574" />
     <state x="660" y="277" key="refactoring.ChangeSignatureDialog" timestamp="1603856741886">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
