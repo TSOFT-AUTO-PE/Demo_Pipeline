@@ -27,7 +27,10 @@ pipeline {
         }*/
         stage('Update DATA') {
               steps {
-              bat "xcopy /s ${params.DATA_FILE} .\src\main\resources\excel\TDP_MiMovistar_Recarga_Web /y"
+              script {
+              def body = '.\src\main\resources\excel\TDP_MiMovistar_Recarga_Web'
+              bat "xcopy /s ${params.DATA_FILE} ${body} /y"
+              }
               }
         }
          stage('Run Static Analysis with SonarQ') {
