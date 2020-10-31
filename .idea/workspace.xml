@@ -22,9 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cee7dd2-1ac3-4e12-9c09-212b020005a1" name="Default Changelist" comment="Se agrega el guardado del excel">
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-    </list>
+    <list default="true" id="5cee7dd2-1ac3-4e12-9c09-212b020005a1" name="Default Changelist" comment="Se agrega el guardado del excel" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,13 +166,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603819703176</updated>
-    </task>
-    <task id="LOCAL-00063" summary="Se cambio archivo JenkinsF WS v.35">
-      <created>1603964320768</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1603964320768</updated>
     </task>
     <task id="LOCAL-00064" summary="Se cambio archivo JenkinsF WS v.35">
       <created>1603964809448</created>
@@ -512,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604125726476</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="Se agrega el guardado del excel">
+      <created>1604126065440</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1604126065441</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,10 +582,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603966794284" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1604125728023">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1604126067531">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604125728023" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604126067531" />
     <state x="660" y="277" key="refactoring.ChangeSignatureDialog" timestamp="1603856741886">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
