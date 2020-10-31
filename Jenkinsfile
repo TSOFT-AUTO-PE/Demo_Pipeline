@@ -28,7 +28,7 @@ pipeline {
         stage('Update DATA') {
               steps {
               script {
-              def body = '.\src\main\resources\excel\TDP_MiMovistar_Recarga_Web'
+              def body = '.\\src\\main\\resources\\excel\\TDP_MiMovistar_Recarga_Web'
               bat "xcopy /s ${params.DATA_FILE} ${body} /y"
               }
               }
