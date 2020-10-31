@@ -12,6 +12,7 @@ pipeline {
          }
 
    stages {
+
      stage('Building') {
             steps {
                // Get some code from a GitHub repository
@@ -25,12 +26,28 @@ pipeline {
             git 'https://github.com/TSOFT-AUTO-PE/Demo_Pipeline.git'
             }
         }
-              stage('Update DATA') {
+        stage('Upload a CSV') {
+                 steps {
+                     script {
+
+                                def inputCSVPath = input message: 'Upload file', parameters: [file(name: 'Test.csv', description: 'Upload only CSV file')]
+                                def csvContent = readFile "${inputCSVPath}"
+
+                                 echo ("CSV FILE PATH IS : ${inputCSVPath}")
+                                 echo("CSV CONTENT IS: ${csvContent}")
+                }
+
+                         echo env.STAGE_NAME
+                         echo '=========== Upload a CSV =============='
+
+
+                 }
+             /* stage('Update DATA') {
                           steps {
                           bat "REPLACE ${params.DATA_FILE} .\\src\\main\\resources\\excel"
 
                           }
-                    }
+                    }*/
          /*stage('Run Static Analysis with SonarQ') {
                     steps {
                     script{
@@ -54,16 +71,16 @@ pipeline {
             }
       }
 
-        stage('Especify the TAG') {
+        stage('Especify the TAG and Run Test') {
                             steps {
                                 script {
-                                    def nombre = 'mvn test -Dcucumber.options="--tags '
+                                    def mvnVariable = 'mvn test -Dcucumber.options="--tags '
                                     def userInputTxt = input(
                                                         id: 'inputTAG', message: 'Please enter mvn TAG Description', parameters: [
-                                                        [$class: 'TextParameterDefinition', description: 'mvn test -Dcucumber.options="--tags @InputYourTAG',name: 'input']
+                                                        [$class: 'TextParameterDefinition', description: 'Input the TAG for Execution ',name: 'Input']
                                                        ])
                                        echo ("The TAG Test Running is: ${userInputTxt}")
-                                       bat "${nombre}${userInputTxt}"
+                                       bat "${mvnVariable}${userInputTxt}"
 
                                 }
                                 }
