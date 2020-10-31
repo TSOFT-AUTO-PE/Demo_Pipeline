@@ -18,6 +18,7 @@ pipeline {
                echo 'Creando WorkSpace'
                }
            }*/
+
               stage('Clean the Script') {
                     steps {
                     bat 'mvn clean'
