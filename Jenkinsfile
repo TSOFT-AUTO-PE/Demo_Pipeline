@@ -19,19 +19,11 @@ pipeline {
                }
            }*/
 
-       /*stage('Versioning') {
+       stage('Versioning') {
          steps {
             // Get some code from a GitHub repository
             git 'https://github.com/TSOFT-AUTO-PE/Demo_Pipeline.git'
             }
-        }*/
-        stage('Update DATA') {
-              steps {
-              script {
-              def body = '.\\src\\main\\resources\\excel\\TDP_MiMovistar_Recarga_Web'
-              bat "xcopy /s ${params.DATA_FILE} ${body} /y"
-              }
-              }
         }
 
               stage('Clean the Script') {
@@ -57,6 +49,14 @@ pipeline {
 
                     }
               }
+                      stage('Update DATA') {
+                            steps {
+                            script {
+                            def body = '.\\src\\main\\resources\\excel\\TDP_MiMovistar_Recarga_Web'
+                            bat "xcopy /s ${params.DATA_FILE} ${body} /y"
+                            }
+                            }
+                      }
 
         stage('Especify the TAG and Run Test') {
                             steps {
