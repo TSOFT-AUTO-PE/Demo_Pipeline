@@ -27,7 +27,7 @@ pipeline {
          stage('Run Static Analysis with SonarQ') {
                     steps {
                     script{
-                        withSonarQubeEnv('sonarserver') {
+                        withSonarQubeEnv(credentialsId: 'sonar-key2') {
                                              bat "mvn sonar:sonar"
                                             }
                                    //         timeout(time: 1, unit: 'HOURS'){
