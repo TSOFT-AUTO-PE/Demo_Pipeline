@@ -17,7 +17,7 @@ public class PageRecargasCorreo {
     public static By BTN_CONTINUAR22                    = By.xpath("/html/body/app-root/app-checkout/div/div[2]/button");
     public static By FRAMECORREO                        = By.xpath("/html/body/app-root/app-checkout");
 
-    public static final String EXCEL_WEB = "excel/MiMovistar_Recargas.xlsx";
+    public static final String EXCEL_WEB = "excel/TDP_MiMovistar_Recarga_Web/MiMovistar_Recargas.xlsx";
     public static final String RECARGAS_WEB = "Recargas";
     public static final String COLUMNA_CORREO = "CORREO";
     public static GenerateWord generateWord = new GenerateWord();

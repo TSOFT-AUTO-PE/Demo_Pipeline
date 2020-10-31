@@ -17,7 +17,7 @@ public class PageRecargasHome {
     public static By TXT_MONTO                          = By.id("input_monto"); //id
     public static By BTN_CONTINUAR                      = By.id("button_recargar"); //id
 
-    public static final String EXCEL_WEB = "excel/MiMovistar_Recargas.xlsx";
+    public static final String EXCEL_WEB = "excel/TDP_MiMovistar_Recarga_Web/MiMovistar_Recargas.xlsx";
     public static final String RECARGAS_WEB = "Recargas";
     public static final String COLUMNA_URL = "URL";
     public static final String COLUMNA_TELEFONO = "TELEFONO";

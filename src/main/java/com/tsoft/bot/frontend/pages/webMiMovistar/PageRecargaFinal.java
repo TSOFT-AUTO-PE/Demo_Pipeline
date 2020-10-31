@@ -19,7 +19,7 @@ public class PageRecargaFinal {
     public static By FRAMEWAIT                          = By.xpath("/html/body/app-root/app-checkout/div/div/p");
 
 
-    public static final String EXCEL_WEB = "excel/MiMovistar_Recargas.xlsx";
+    public static final String EXCEL_WEB = "excel/TDP_MiMovistar_Recarga_Web/MiMovistar_Recargas.xlsx";
     public static final String RECARGAS_WEB = "Recargas";
     public static GenerateWord generateWord = new GenerateWord();
     public static WebDriver driver;

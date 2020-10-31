@@ -18,7 +18,7 @@ public class PageRecargasPago {
     public static By TXT_CVV2                           = By.id("csc");
     public static By BTN_PAGAR2                         = By.id("bConfirmPaymentButton");
 
-    public static final String EXCEL_WEB = "excel/MiMovistar_Recargas.xlsx";
+    public static final String EXCEL_WEB = "excel/TDP_MiMovistar_Recarga_Web/MiMovistar_Recargas.xlsx";
     public static final String RECARGAS_WEB = "Recargas";
     public static final String COLUMNA_NUMTARJETA = "NUM_TARJETA";
     public static final String COLUMNA_FV_MES = "FV_MES";

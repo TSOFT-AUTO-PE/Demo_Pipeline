@@ -1,7 +1,7 @@
 pipeline {
      parameters {
       string(name: 'NODE_NAME', defaultValue: '', description: 'Enter the name of the node for the execution')
-      //string(name: 'DATA_FILE', defaultValue: '', description: 'Enter the Route of the DATA INPUT')
+      string(name: 'DATA_FILE', defaultValue: 'C:\\DATA_Jenkins\\TDP_MiMovistar_Recarga_Web', description: 'Enter the Path of the DATA ENTRY, this must be in the NODE')
       //string(name: 'TEST_TAG', defaultValue: 'mvn test -Dcucumber.options="--tags ', description: 'This parameter is STATIC, do not Change')
       //string(name: 'COPY_DESC', defaultValue: '.\\src\\main\\resources\\excel', description: 'Change backslash')
      }
@@ -12,28 +12,25 @@ pipeline {
 
    stages {
 
-     stage('Building') {
+     /*stage('Building') {
             steps {
                // Get some code from a GitHub repository
                echo 'Creando WorkSpace'
                }
-           }
+           }*/
 
-       stage('Versioning') {
+       /*stage('Versioning') {
          steps {
             // Get some code from a GitHub repository
             git 'https://github.com/TSOFT-AUTO-PE/Demo_Pipeline.git'
             }
+        }*/
+        stage('Update DATA') {
+              steps {
+              bat "xcopy /s ${params.NODE_NAME} .//src//main//resources//excel//TDP_MiMovistar_Recarga_Web /y"
+              }
         }
-              stage('Update DATA') {
-                          steps {
-                          script {
-                             def inFile = input id: 'file1', message: 'Upload a file', parameters: [file(name: 'data.tmp', description: 'Choose a file')]
-                               bat "REPLACE ${inFile} .\\src\\main\\resources\\excel"
-}
-                          }
-                    }
-         /*stage('Run Static Analysis with SonarQ') {
+         stage('Run Static Analysis with SonarQ') {
                     steps {
                     script{
                         withSonarQubeEnv('sonarserver') {
@@ -49,7 +46,7 @@ pipeline {
                     }
 
                     }
-              }*/
+              }
         stage('Clean the Script') {
             steps {
             bat 'mvn clean'
