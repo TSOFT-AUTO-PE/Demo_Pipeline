@@ -2,7 +2,7 @@ pipeline {
      parameters {
       string(name: 'NODE_NAME', defaultValue: '', description: 'Enter the name of the node for the execution')
       string(name: 'DATA_FILE', defaultValue: '', description: 'Enter the Route of the DATA INPUT')
-      string(name: 'TEST_TAG', defaultValue: 'mvn test -Dcucumber.options="--tags ', description: 'This parameter is STATIC, do not Change')
+      //string(name: 'TEST_TAG', defaultValue: 'mvn test -Dcucumber.options="--tags ', description: 'This parameter is STATIC, do not Change')
       //file description: 'Ingrese Excel Input', name: 'DATA_EXCEL'
       //string(name: 'COPY_DESC', defaultValue: '.\\src\\main\\resources\\excel', description: 'Change backslash')
      }
@@ -57,13 +57,13 @@ pipeline {
         stage('Especify the TAG') {
                             steps {
                                 script {
-
+                                    def nombre = 'mvn test -Dcucumber.options="--tags '
                                     def userInputTxt = input(
                                                         id: 'inputTAG', message: 'Please enter mvn TAG Description', parameters: [
                                                         [$class: 'TextParameterDefinition', description: 'mvn test -Dcucumber.options="--tags @InputYourTAG',name: 'input']
                                                        ])
                                        echo ("The TAG Test Running is: ${userInputTxt}")
-                                       bat "${params.TEST_TAG}${userInputTxt}"
+                                       bat "${nombre}${userInputTxt}"
 
                                 }
                                 }
