@@ -26,23 +26,6 @@ pipeline {
             git 'https://github.com/TSOFT-AUTO-PE/Demo_Pipeline.git'
             }
         }
-         stage('Upload a CSV') {
-                 steps {
-                     script {
-
-                                def inputCSVPath = input message: 'Upload file', parameters: [file(name: 'MiMovistar_Recargas.xlsx', description: 'Upload only CSV file')]
-                                def csvContent = readFile "${inputCSVPath}"
-
-                                 echo ("CSV FILE PATH IS : ${inputCSVPath}")
-                                 echo("CSV CONTENT IS: ${csvContent}")
-                }
-
-                         echo env.STAGE_NAME
-                         echo '=========== Upload a CSV =============='
-
-
-                 }
-              }
               stage('Update DATA') {
                           steps {
                           bat "REPLACE ${params.DATA_EXCEL} .\\src\\main\\resources\\excel"
