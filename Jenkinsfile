@@ -33,6 +33,13 @@ pipeline {
               }
               }
         }
+
+              stage('Clean the Script') {
+                    steps {
+                    bat 'mvn clean'
+                    }
+              }
+
          stage('Run Static Analysis with SonarQ') {
                     steps {
                     script{
@@ -50,11 +57,6 @@ pipeline {
 
                     }
               }
-        stage('Clean the Script') {
-            steps {
-            bat 'mvn clean'
-            }
-      }
 
         stage('Especify the TAG and Run Test') {
                             steps {
