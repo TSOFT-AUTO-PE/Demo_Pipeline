@@ -18,14 +18,6 @@ pipeline {
                echo 'Creando WorkSpace'
                }
            }*/
-
-       stage('Versioning') {
-         steps {
-            // Get some code from a GitHub repository
-            git 'https://github.com/TSOFT-AUTO-PE/Demo_Pipeline.git'
-            }
-        }
-
               stage('Clean the Script') {
                     steps {
                     bat 'mvn clean'
