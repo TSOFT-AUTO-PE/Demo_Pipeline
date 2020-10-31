@@ -30,7 +30,7 @@ pipeline {
                     steps {
                     script{
                         withSonarQubeEnv('sonarserver') {
-                                             bat "mvn sonar:sonar"
+                                             bat "mvn sonar:sonar -Dsonar.host.url=http://192.168.30.15:9000"
                                             }
                                    //         timeout(time: 1, unit: 'HOURS'){
                                      //       def qg = waitForQualityGate()
