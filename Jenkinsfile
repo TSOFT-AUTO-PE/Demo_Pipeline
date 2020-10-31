@@ -26,7 +26,7 @@ pipeline {
             git 'https://github.com/TSOFT-AUTO-PE/Demo_Pipeline.git'
             }
         }
-        stage('Upload a CSV') {
+         stage('Upload a CSV') {
                  steps {
                      script {
 
@@ -42,12 +42,13 @@ pipeline {
 
 
                  }
-             /* stage('Update DATA') {
+              }
+              stage('Update DATA') {
                           steps {
                           bat "REPLACE ${params.DATA_FILE} .\\src\\main\\resources\\excel"
 
                           }
-                    }*/
+                    }
          /*stage('Run Static Analysis with SonarQ') {
                     steps {
                     script{
