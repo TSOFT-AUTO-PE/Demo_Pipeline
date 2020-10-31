@@ -90,6 +90,11 @@ pipeline {
 		    archiveArtifacts 'target/resultado/frontend-reporte.html'
             }
       }
+      stage('Archive Results EXCEL') {
+                  steps {
+      		    archiveArtifacts 'src/resources/excel/*.*'
+                  }
+            }
       stage('Cleaning WS') {
             steps {
             dir('target') {
