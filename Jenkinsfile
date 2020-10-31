@@ -27,8 +27,9 @@ pipeline {
 
          stage('Run Static Analysis with SonarQ') {
                     steps {
-
-                                             bat 'mvn sonar:sonar -Dsonar.host.url=http://192.168.30.27:9000'
+                    script{
+                        withSonarQubeEnv('sonarserver') {
+                                             bat "mvn sonar:sonar -Dsonar.host.url=http://192.168.30.27:9000"
                                             }
                                    //         timeout(time: 1, unit: 'HOURS'){
                                      //       def qg = waitForQualityGate()
@@ -39,6 +40,8 @@ pipeline {
 
                     }
 
+                    }
+              }
                       stage('Update DATA') {
                             steps {
                             script {
