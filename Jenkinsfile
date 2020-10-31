@@ -92,7 +92,7 @@ pipeline {
       }
       stage('Archive Results EXCEL') {
                   steps {
-      		    archiveArtifacts 'src/resources/excel/*.*'
+      		    archiveArtifacts 'src/main/resources/excel/*.*'
                   }
             }
       stage('Cleaning WS') {
