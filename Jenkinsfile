@@ -36,7 +36,7 @@ pipeline {
                     script{
                         withSonarQubeEnv('sonarserver') {
                                              bat "mvn sonar:sonar"
-                                            }*/
+                                            }
                                    //         timeout(time: 1, unit: 'HOURS'){
                                      //       def qg = waitForQualityGate()
                                          //       if(qg.status != 'OK'){
@@ -47,7 +47,7 @@ pipeline {
                     }
 
                     }
-              }
+              }*/
         stage('Clean the Script') {
             steps {
             bat 'mvn clean'
