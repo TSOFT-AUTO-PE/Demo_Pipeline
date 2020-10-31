@@ -24,6 +24,7 @@ pipeline {
                     }
               }
 
+
          stage('Run Static Analysis with SonarQ') {
                     steps {
                     script{
